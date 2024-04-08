@@ -3,7 +3,14 @@
 ![imagen](https://github.com/sofi131/proyecto_django/assets/91051075/1e9890ff-c198-4a24-b87b-40bc1b36428f) <br>
 ![imagen](https://github.com/sofi131/proyecto_django/assets/91051075/fd070591-b6d4-46cf-b6c3-883219b8808b) <br>
 ![imagen](https://github.com/sofi131/proyecto_django/assets/91051075/802109f3-319f-4ea3-9f67-053588bea7e7) <br>
-![imagen](https://github.com/sofi131/proyecto_django/assets/91051075/2b2b88f9-d599-4b75-9520-5ecba9b8d8f7) <br>
+![imagen](https://github.com/sofi131/proyecto_django/assets/91051075/6ee28862-8949-407e-96c9-dc37413f53fb) <br>
+![imagen](https://github.com/sofi131/proyecto_django/assets/91051075/fc5ee5fb-c9f9-41ac-9f9b-8fde9ae50a1e) <br>
+![imagen](https://github.com/sofi131/proyecto_django/assets/91051075/119a52c2-124d-43c6-9ad8-fe783c037309) <br>
+
+
+
+
+
 
 
 
