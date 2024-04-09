@@ -1,5 +1,2 @@
-(entorno) ~$ pip install -r requirements.txt
-Collecting Django~=3.2.10 (from -r requirements.txt (line 1))
-  Downloading Django-3.2.10-py3-none-any.whl (7.1MB)
-Installing collected packages: Django
-Successfully installed Django-3.2.10
+Django~=3.2.10
+mysqlclient
