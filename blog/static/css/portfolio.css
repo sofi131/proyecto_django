@@ -1,0 +1,167 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    /* Fuente Google Roboto */
+}
+
+/* Estilo para el encabezado */
+.navbar {
+    border: none;
+    /* Sin borde */
+    border-radius: 0;
+    /* Sin bordes redondeados */
+    opacity: 0;
+    /* Inicialmente oculto */
+    animation: fadeIn 2s ease forwards;
+    /* Animación de fade in con duración de 2 segundos */
+}
+
+.navbar-brand {
+    color: #fff;
+    /* Color del texto */
+}
+
+.navbar-nav>li>a {
+    color: #fff;
+    /* Color del texto */
+}
+
+.container-fluid {
+    background-color: #FAFAFA;
+    /* Cambia el color de fondo a gris claro */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Estilo para el título del portfolio */
+h2 {
+    margin-top: 40px;
+    /* Margen superior */
+    margin-bottom: 30px;
+    /* Margen inferior */
+    font-size: 24px;
+    /* Tamaño de fuente */
+    color: #333;
+    /* Color del texto */
+    opacity: 0;
+    /* Inicialmente oculto */
+    animation: fadeIn 2s ease forwards;
+    /* Animación de fade in con duración de 2 segundos */
+    animation-delay: 1s;
+    /* Retraso de 1 segundo */
+    position: relative;
+    /* Posición relativa */
+    animation-name: fallIn;
+    /* Nombre de la animación */
+}
+
+/* Animación de caída */
+@keyframes fallIn {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para las miniaturas de las imágenes */
+.thumbnail {
+    border: none;
+    /* Sin borde */
+    border-radius: 0;
+    /* Borde redondeado */
+    box-shadow: none;
+    /* Sin sombra */
+    background-color: transparent;
+    /* Fondo transparente */
+    transition: opacity 0.3s;
+    /* Transición suave para la propiedad de opacidad */
+    position: relative;
+    /* Establece la posición relativa */
+    opacity: 0;
+    /* Inicialmente oculto */
+}
+
+/* Estilo para las imágenes dentro de las miniaturas */
+.thumbnail>img {
+    border-radius: 5px;
+    /* Pequeño border-radius */
+    background-color: rgba(128, 0, 128, 0.479);
+    /* Color morado con opacidad */
+}
+
+/* Estilo para el título de los proyectos */
+.thumbnail .caption h3 {
+    margin-top: 20px;
+    /* Margen superior */
+    font-size: 18px;
+    /* Tamaño de fuente */
+    color: #333;
+    /* Color del texto */
+}
+
+/* Estilo para la descripción de los proyectos */
+.thumbnail .caption p {
+    font-size: 14px;
+    /* Tamaño de fuente */
+    color: #666;
+    /* Color del texto */
+}
+
+/* Efecto de opacidad en hover */
+.thumbnail:hover {
+    opacity: 0.5;
+    /* Opacidad reducida al hacer hover */
+}
+
+/* Efecto de superposición de color morado con opacidad en la imagen en hover */
+.thumbnail:hover>img {
+    filter: brightness(90%);
+    /* Ajusta el brillo */
+}
+
+/* Animación de zoom en hover */
+.thumbnail:hover>img {
+    animation: zoomIn 0.3s ease forwards;
+}
+
+/* Definición de la animación */
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Animación de fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* Inicialmente oculto */
+    }
+
+    to {
+        opacity: 1;
+        /* Visible */
+    }
+}
+
+/* Animación para aparecer una a una */
+.thumbnail:nth-child(odd),
+h2 {
+    animation: fadeIn 2s ease forwards;
+    /* Animación de fade in con duración de 2 segundos */
+}
+
+.thumbnail:nth-child(even) {
+    animation: fadeIn 2s ease forwards;
+    /* Animación de fade in con duración de 2 segundos */
+    animation-delay: 0.5s;
+    /* Retraso para que aparezcan una a una */
+}

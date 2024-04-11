@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+
+<body>
+    <!--nav-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Mi Portfolio</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="{% url 'portfolio_list' %}">Portfolio</a></li>
+            <!-- Puedes agregar más enlaces aquí -->
+            <li><a href="#">Blog</a></li>
+            <li><a href="{% url 'contact' %}">Contacto</a></li>
+            <li><a href="https://sofiasanmartin.com/">Mi web</a></li>
+        </ul>
+    </div>
+</nav>
+<!--wrapper-->
+    <div class="wrapper">
+        <form class="form">
+            <div class="pageTitle title">Contacto</div>
+            <div class="secondaryTitle title">Rellena el formulario si quieres contactar conmigo.</div>
+            <input type="text" class="name formEntry" placeholder="Nombre" />
+            <input type="text" class="email formEntry" placeholder="Email" />
+            <textarea class="message formEntry" placeholder="Mensaje"></textarea>
+            <input type="checkbox" class="termsConditions" value="Term">
+            <label style="color: grey" for="terms"> Acepto los <span style="color: #1c5d99">Términos de uso</span> &
+                <span style="color: #1c5d99">las políticas de privacidad</span>.</label><br>
+            <button class="submit formEntry" onclick="thanks()">Enviar</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+{% load static %}
+<html>
+<head>
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+<!--nav-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Mi Portfolio</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Portfolio</a></li>
+            <!-- Puedes agregar más enlaces aquí -->
+            <li><a href="#">Blog</a></li>
+            <li><a href="{% url 'contact' %}">Contacto</a></li>
+            <li><a href="https://sofiasanmartin.com/">Mi web</a></li>
+        </ul>
+    </div>
+</nav>
+<!--container-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Portafolio</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="{% static 'img/rei.jpg' %}" alt="Rei">
+                <div class="caption">
+                    <h3>Rei Ayanami</h3>
+                    <p>Descripción del proyecto 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="{% static 'img/shinji.jpg' %}" alt="Shinji">
+                <div class="caption">
+                    <h3>Shinji Ikari</h3>
+                    <p>Descripción del proyecto 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="{% static 'img/asuka.jpg' %}" alt="Asuka">
+                <div class="caption">
+                    <h3>Asuka</h3>
+                    <p>Descripción del proyecto 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="{% static 'img/kaworu.jpg' %}" alt="Kaworu">
+                <div class="caption">
+                    <h3>Kaworu Nagisa</h3>
+                    <p>Descripción del proyecto 4</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="{% static 'img/misato.jpg' %}" alt="Misato">
+                <div class="caption">
+                    <h3>Misato</h3>
+                    <p>Descripción del proyecto 5</p>
+                </div>
+            </div>
+        </div>
+        <!-- Agrega más columnas aquí para más imágenes -->
+    </div>
+</div>
+
+</body>
+</html>

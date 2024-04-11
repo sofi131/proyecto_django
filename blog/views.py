@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from .models import Post
 from .forms import PostForm
+from .models import Proyecto  # Importa el modelo Proyecto desde models.py
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
@@ -21,13 +22,12 @@ def post_new(request):
             post.save()
             return redirect('post_detail', pk=post.pk)
     else:
-        form = PostForm()  # Crea una instancia del formulario PostForm
+        form = PostForm()  
     return render(request, 'blog/post_edit.html', {'form': form})
 
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
-        # Cuando se envía el formulario para editar la publicación, se debe instanciar el formulario con los datos del formulario enviado y la instancia del post a editar.
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
             post = form.save(commit=False)
@@ -36,7 +36,13 @@ def post_edit(request, pk):
             post.save()
             return redirect('post_detail', pk=post.pk)
     else:
-        # Cuando se carga la página para editar la publicación, simplemente se debe instanciar el formulario con la instancia del post a editar.
         form = PostForm(instance=post)
     
     return render(request, 'blog/post_edit.html', {'form': form})
+#parte de portfolio
+def portfolio_list(request):
+    proyectos = Proyecto.objects.all()  # Obtiene todos los proyectos del modelo Proyecto
+    return render(request, 'blog/portfolio_list.html', {'proyectos': proyectos})
+
+def contact_view(request):
+    return render(request, 'blog/contact.html')
