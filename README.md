@@ -9,6 +9,13 @@ Resultados finales: <br>
 ![imagen](https://github.com/sofi131/proyecto_django/assets/91051075/fc5ee5fb-c9f9-41ac-9f9b-8fde9ae50a1e) <br>
 ![imagen](https://github.com/sofi131/proyecto_django/assets/91051075/119a52c2-124d-43c6-9ad8-fe783c037309) <br>
 Súper user: ola y pw: 1234 <br>
+Web de portfolio con el framework de django <br>
+![imagen](https://github.com/sofi131/proyecto_django/assets/91051075/f7bfeaae-c92b-40ab-8074-e5506fbb9d81) <br>
+![imagen](https://github.com/sofi131/proyecto_django/assets/91051075/8661e7d4-b389-4652-a9db-6f1d2e09f1d0) <br>
+![imagen](https://github.com/sofi131/proyecto_django/assets/91051075/5e1e4e52-fa73-4197-87ca-5c5d57906c3f) <br>
+
+
+
 
 
 
