@@ -3,7 +3,10 @@
     /* Fuente Google Roboto */
 }
 body {
-    background-color: #d1f3e7;
+    background-color: #98c0d8;
+}
+.terminos {
+    margin-left: 60px;
 }
 
 #title-Tag-Line {
